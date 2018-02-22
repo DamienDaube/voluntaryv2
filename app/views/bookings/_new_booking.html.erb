@@ -1,0 +1,11 @@
+<%= simple_form_for [service, booking] do |f| %>
+  <div class="form-inline">
+    <h4>Arrival date</h4>
+    <%= f.input :start_date %>
+  </div>
+  <div class="form-inline">
+    <h4>Departure date</h4>
+    <%= f.input :end_date %>
+  </div>
+  <%= f.submit "Book", class: "btn btn-primary" %>
+<% end %>

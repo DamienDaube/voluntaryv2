@@ -1,0 +1,32 @@
+.card {
+  background-size: cover;
+  background-position: center;
+  background: rgba(51, 51, 51, 0.2);
+  border-radius: 10px;
+  padding-bottom: 15px;
+  margin: 15px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 80%;
+  font-size: 25px;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  button {
+    margin: auto;
+    display: block;
+  }
+}
+h1 {
+  margin-left: 110px;
+}
+h2 {
+  font-size: 25px;
+  padding-top: 5px;
+  margin: 5px;
+}
+h4 {
+  color: black;
+}
+.btn {
+  margin: 15px;
+}

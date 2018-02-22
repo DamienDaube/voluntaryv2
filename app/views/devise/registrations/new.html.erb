@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="col-md-6 col-md-offset-3">
+    <h2>Sign up</h2>
+    <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    <%= f.error_notification %>
+
+    <div class="form-row">
+    <%= f.input :email, label: false, placeholder: 'Email', required: true, autofocus: true %>
+    <%= f.input :password, label: false, placeholder: 'Password', required: true %>
+    <%= f.input :password_confirmation, label: false, placeholder: 'Please confirm password', required: true %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, "Sign up"%>
+    </div>
+    <% end %>
+
+    <%= link_to "Log in", new_session_path(resource_name) %><br />
+  </div>
+</div>

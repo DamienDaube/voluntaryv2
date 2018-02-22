@@ -1,0 +1,15 @@
+<div class="container_services">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <h1 id="main-list-title">Services</h1>
+    </div>
+  <div class="row">
+    <% @categories.each do |category| %>
+      <div class="col-md-6 col-md-offset-1">
+          <div class="list-description">
+            <h2><%= link_to category, service_category_path(category) %> </h2>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
